@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for proper character encoding and responsive viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | NTWIST</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* FAQ section container styling */
+    .faq-section {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 2rem;
+    }
+    /* Styling for each FAQ item using HTML5 details/summary elements */
+    details {
+      margin-bottom: 1rem;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      background: #f9f9f9;
+    }
+    /* Styling for the clickable question (summary) */
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+    /* Visual feedback when FAQ item is expanded */
+    details[open] {
+      background: #e6f7ff;
+      border-color: #b3e0ff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main container with sidebar and content layout -->
+  <div class="container">
+    <!-- Sidebar navigation -->
+    <aside class="sidebar">
+      <h2>NTWIST Sidebar</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Form</a></li>
+          <li><a href="sort.html">Sort List</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- Main content area -->
+    <main class="main-content">
+      <h1>Frequently Asked Questions</h1>
+      <!-- FAQ section using HTML5 details/summary for accordion functionality -->
+      <section class="faq-section">
+        <!-- Individual FAQ items that can be expanded/collapsed -->
+        <details>
+          <summary>What is NTWIST?</summary>
+          <p>NTWIST is a software company specializing in innovative web solutions.</p>
+        </details>
+        <details>
+          <summary>How do I contact support?</summary>
+          <p>You can contact support using the form on the main page or by emailing support@ntwist.com.</p>
+        </details>
+        <details>
+          <summary>Is this project mobile responsive?</summary>
+          <p>Yes, all pages are designed to be mobile responsive using CSS Grid and Flexbox.</p>
+        </details>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

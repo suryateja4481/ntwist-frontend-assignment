@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form | NTWIST</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>NTWIST Sidebar</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Form</a></li>
+          <li><a href="sort.html">Sort List</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <h1>Contact Us</h1>
+      <form id="contactForm" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z\s]{2,}" autocomplete="off">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autocomplete="off">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required minlength="10"></textarea>
+
+        <div id="timer">Time spent: 0s</div>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="confirmation" class="hidden"></div>
+    </main>
+  </div>
+  <script src="assets/js/form.js"></script>
+</body>
+</html>
